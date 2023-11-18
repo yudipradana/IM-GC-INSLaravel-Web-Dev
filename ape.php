@@ -2,8 +2,17 @@
 
 require_once('Animal.php');
 
-class Frog extends Animal {
-    public function jump() {
-        echo $this->getName() . " is jumping!\n";
+class Ape extends Animal
+{
+    public function __construct($name)
+    {
+        parent::__construct($name, 2, false);
+    }
+
+    public function yell()
+    {
+        echo "Auooo\n";
     }
 }
+
+?>

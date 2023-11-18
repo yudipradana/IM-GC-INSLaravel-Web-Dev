@@ -1,14 +1,18 @@
 <?php
-// Frog.php
 
-// Import class Animal
 require_once('Animal.php');
 
-// Definisi class Frog yang merupakan inheritance dari class Animal
-class Frog extends Animal {
-    // Metode untuk membuat kodok melompat
-    public function jump() {
-        echo "{$this->name} ({$this->species}) is jumping: hop hop\n";
+class Frog extends Animal
+{
+    public function __construct($name)
+    {
+        parent::__construct($name, 4, false);
+    }
+
+    public function jump()
+    {
+        echo "hop hop\n";
     }
 }
+
 ?>

@@ -1,23 +1,18 @@
+
 <?php
 
-class Animal {
-    // Properties
+class Animal
+{
     public $name;
-    public $legs = 4;
-    public $cold_blooded = "no";
+    public $legs;
+    public $coldBlooded;
 
-    // Constructor
-    public function __construct($name) {
+    public function __construct($name, $legs, $coldBlooded)
+    {
         $this->name = $name;
+        $this->legs = $legs;
+        $this->coldBlooded = $coldBlooded;
     }
 }
-
-// Contoh penggunaan class
-$cat = new Animal("Cat");
-echo "Name: " . $cat->name . "\n";
-echo "Legs: " . $cat->legs . "\n";
-echo "Cold Blooded: " . $cat->cold_blooded . "\n";
-
-
 
 ?>
